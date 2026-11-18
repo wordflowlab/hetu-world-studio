@@ -1,0 +1,278 @@
+{
+  "date": "2026-11-18",
+  "sources": [
+    {
+      "repository": "deepseek-ai/deepseek-harness",
+      "commit": "2e39e70496aa02986ca6a820c5d497e816b69d7e",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/tree/2e39e70496aa02986ca6a820c5d497e816b69d7e",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be",
+          "bytes": 1065
+        },
+        {
+          "path": "README.i18n.yaml",
+          "sha256": "700422df48df27704707a6832b7ba7234f1f44c42494ceffb3b8ee2210f989af",
+          "bytes": 1082
+        },
+        {
+          "path": "README.md",
+          "sha256": "0f5516be2acde776f05572cbc8c3093c90549afe04ce118e11157d073d5d15f4",
+          "bytes": 2673
+        },
+        {
+          "path": "README.zh.md",
+          "sha256": "8f19db1b217e8ef30cf413b07056cc791048bc2ba2ec51ba104e383dcfb43c61",
+          "bytes": 3371
+        },
+        {
+          "path": "benchmarks/package.json",
+          "sha256": "b2872235003c7a578d661d3ad8ec436c90e32bfb454a8d2015623802974bf447",
+          "bytes": 2444
+        },
+        {
+          "path": "native/README.i18n.yaml",
+          "sha256": "e21aeeed89586757cdef4172f1821a801767d7d7df108e9c3fef10ac73904d87",
+          "bytes": 457
+        },
+        {
+          "path": "native/README.md",
+          "sha256": "d5b903c6fe4fc01a53653b69d6d3c386162b66d8f03f30565a3da3e3c8ecaba4",
+          "bytes": 996
+        },
+        {
+          "path": "native/README.zh.md",
+          "sha256": "dc6577417fcf1509a54315b3bde6be3f56b70c38c3cfeaacc360f08bc5ae1779",
+          "bytes": 887
+        },
+        {
+          "path": "package.json",
+          "sha256": "4a532e2cf6c2e8283bb5714b6fa6d4a0e6c123be0cecb0b0ab5763892eb80b91",
+          "bytes": 20582
+        },
+        {
+          "path": "packages/README.i18n.yaml",
+          "sha256": "3a3657de038cae89492b65eeb666880ce035bcf34daad9ab772f662980e06514",
+          "bytes": 932
+        },
+        {
+          "path": "packages/README.md",
+          "sha256": "6545d90f4b0b1b3c36ddbd9f939b29a20ed6f1f0beec2c7bc826dd0c5b3eb4f8",
+          "bytes": 8847
+        },
+        {
+          "path": "packages/README.zh.md",
+          "sha256": "48a5c72e73c0f3a19976bc1d48729322aca441f080205844e36c141727d2650f",
+          "bytes": 8555
+        },
+        {
+          "path": "python/README.i18n.yaml",
+          "sha256": "ef073c18054d21d796fbc68a64e82f4f97bca7f1a8ece60d9452557d8a219a25",
+          "bytes": 660
+        },
+        {
+          "path": "python/README.md",
+          "sha256": "b88f74e628647e93d0740a437521f475744f06d9a87fff62bcae186a28518ad1",
+          "bytes": 1319
+        },
+        {
+          "path": "python/README.zh.md",
+          "sha256": "ae1561ebb2f675b0a1a36e4fa9d4d28e255fe7e9d6c8c024f709b2d621575f0a",
+          "bytes": 1273
+        },
+        {
+          "path": ".agents/notes/archived/architecture/2026-08-25-sparse-first-party-prompt-section-orders.md",
+          "sha256": "b70159d112dbd5955d91dff367fa39259e78fe747389124a15b44af26124ea5d",
+          "bytes": 6148
+        },
+        {
+          "path": ".agents/notes/archived/architecture/2026-08-25-sparse-first-party-prompt-section-orders.zh.md",
+          "sha256": "50cc55babd7db5322554fe58c85b1425cadde72bab207fa0812f72826117d50f",
+          "bytes": 5609
+        },
+        {
+          "path": ".agents/notes/archived/simplification/2026-07-26-eventsource-parser-for-deepseek-sse.md",
+          "sha256": "ce449c72ed09238ba5dbe6068689db13bd33225694b2ad2c7696541f32dc0eec",
+          "bytes": 3940
+        },
+        {
+          "path": ".agents/notes/archived/simplification/2026-07-26-eventsource-parser-for-deepseek-sse.zh.md",
+          "sha256": "2f66b407b626f1f8c661d849b3b359c959e690715e0ac3f61f7e3d57d59e89c3",
+          "bytes": 3958
+        },
+        {
+          "path": ".agents/notes/proposed/simplification/2026-10-18-parse-ssh-policy-once.md",
+          "sha256": "e474461eeeff60df501eab43168c891238699f189fc08490bb83692a1b826b59",
+          "bytes": 1489
+        },
+        {
+          "path": ".agents/notes/proposed/simplification/2026-10-18-parse-ssh-policy-once.zh.md",
+          "sha256": "2112997ae16239ad43110e862c4f70cb3db930bcc3fdb38f04067bce859e39df",
+          "bytes": 1471
+        },
+        {
+          "path": "apps/desktop/tests/windows-timestamp.spec.ts",
+          "sha256": "5771317139506219a39173b78721a651ee4743982863978232a183ce37dd195a",
+          "bytes": 7079
+        },
+        {
+          "path": "packages/boot/plugin-market/src/parse-thread.ts",
+          "sha256": "64ea68e7dcc50e843154c52113e6e687b898f33d5f7b954f44d7a55ee8d9fddd",
+          "bytes": 3276
+        },
+        {
+          "path": "packages/boot/plugin-market/src/parse.ts",
+          "sha256": "4fa426e55c4a11196d465b7ab43777f4cec8da87be6bd2345294fc173baef16d",
+          "bytes": 1815
+        },
+        {
+          "path": "packages/boot/plugin-market/tests/market-parse-failure.spec.ts",
+          "sha256": "5b336a697afc527efc9ff677a37a97ec6a2bb9663b40ed8c3d8effccd94d9fec",
+          "bytes": 1577
+        },
+        {
+          "path": "packages/boot/plugin-market/tests/parse-thread.spec.ts",
+          "sha256": "944c94371d0fe3b0c96d6fce596a1c3130bf6025a71cc8f051b00d425cdf633e",
+          "bytes": 2873
+        },
+        {
+          "path": "packages/boot/plugin-market/tests/parse-worker.spec.ts",
+          "sha256": "5faed3768655e8c9e378be91fadb09f936fe02f497e48ccca5ba1364bb728dbc",
+          "bytes": 751
+        }
+      ],
+      "scope": "固定源码与文档；未运行上游安装、测试或模型调用"
+    },
+    {
+      "repository": "lusrelay/dsh-worldbuilding",
+      "commit": "fc9bca265dba6843a072cc93c63aeab05bd8617b",
+      "url": "https://github.com/lusrelay/dsh-worldbuilding/tree/fc9bca265dba6843a072cc93c63aeab05bd8617b",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b637ef192327308793ef99d793085bcbe2853c086d5908dbd66a2fe3fed1acc0",
+          "bytes": 1065
+        },
+        {
+          "path": "README.md",
+          "sha256": "cfd43eff189c586f7ae87966e0f9dcdfb4945e952bb2f5904f5ffa077191a700",
+          "bytes": 12833
+        },
+        {
+          "path": "package.json",
+          "sha256": "9599a32c387badb8cb38e6f13b1164c49d291c90f897a3a4aee274c5b81094e9",
+          "bytes": 1567
+        }
+      ],
+      "scope": "固定源码与文档；未运行上游安装、测试或模型调用"
+    },
+    {
+      "repository": "javalent/calendarium",
+      "commit": "388d66d1f62580e6ab18fefa8d2b2787fe9961cf",
+      "url": "https://github.com/javalent/calendarium/tree/388d66d1f62580e6ab18fefa8d2b2787fe9961cf",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "5f485914214c6aaaccb9c21edf1d8e2a749f73cef6f8c11803e4858d4fd25db9",
+          "bytes": 1069
+        },
+        {
+          "path": "README.md",
+          "sha256": "9a7244db1515b690cf60cb8848426d084b05587d0eead3726ee933992f03a9ca",
+          "bytes": 3069
+        },
+        {
+          "path": "package.json",
+          "sha256": "80c9f9379bf069df3c224745bd18937bed86a0755f37a0bc2929d845f1502ab0",
+          "bytes": 2134
+        },
+        {
+          "path": "src/api/calendar.ts",
+          "sha256": "5480a8256b4cf09237b86e2ab7df46514898464ba37732f7d872ae19a94ca81a",
+          "bytes": 4406
+        },
+        {
+          "path": "src/calendar/date-switcher/date.ts",
+          "sha256": "9096e28797264942043b3b36c54313b2348aee713c1cc9319fcdf4673785c23e",
+          "bytes": 1074
+        },
+        {
+          "path": "src/calendar/event-modal.ts",
+          "sha256": "1a3d1f70f7f74bf633b69310fc82bdc6637bfd911880b50913604529c185d96b",
+          "bytes": 827
+        },
+        {
+          "path": "src/calendar/view.ts",
+          "sha256": "6790fdfb3a6ffd552ca0e467f3511a159527bccdc05f4669733c0e36bd0eb225",
+          "bytes": 6733
+        },
+        {
+          "path": "src/calendar/view.types.ts",
+          "sha256": "fd9c1bb59a7e77756bb2e12ded086fb4038a40d617cc0fc7984aef4218c66889",
+          "bytes": 1493
+        },
+        {
+          "path": "src/calendar/view.utils.ts",
+          "sha256": "e2e57518f901e92a4e37260ef5efcbd887abeda931fdc9973f639c26e7125379",
+          "bytes": 408
+        },
+        {
+          "path": "src/codeblocks/calendar/calendar.ts",
+          "sha256": "d8801eeb3e2dde3bb3189d18c6b54cc20861267f8d41400c8f55ff2c41e7a3d8",
+          "bytes": 2711
+        },
+        {
+          "path": "src/schemas/calendar/calendar.ts",
+          "sha256": "91dfa0df3e6c18e49961ab1298091eca7a3d3e82cdc83ab47d3f44a722029199",
+          "bytes": 1785
+        },
+        {
+          "path": "src/schemas/calendar/index.ts",
+          "sha256": "d20636e5ccb16f1e73165f0f5da89a8a41f504fbafd3a3787a5e120ce1b5abaf",
+          "bytes": 28
+        },
+        {
+          "path": "src/schemas/calendar/locations.ts",
+          "sha256": "4fbaeda7624388611f772f699f965743294991c27ec606a8f3d9ed387e67f34c",
+          "bytes": 284
+        },
+        {
+          "path": "src/schemas/calendar/moons.ts",
+          "sha256": "52856b91c8f803e64935dd0fa0a6b42b246a14d0f414618a462bb3f2eb969e63",
+          "bytes": 1319
+        },
+        {
+          "path": "src/schemas/calendar/seasonal.ts",
+          "sha256": "a2af93e7c8c62ab820b8dedfb1563dbe342d585ee81ac6f3790b2781d27bd090",
+          "bytes": 3872
+        }
+      ],
+      "scope": "固定源码与文档；未运行上游安装、测试或模型调用"
+    }
+  ],
+  "runtime_executed": false,
+  "code_copied": false,
+  "scope": "固定源码和已列文档对照；参考不是运行验收"
+}

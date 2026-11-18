@@ -1,0 +1,61 @@
+name: Official host acceptance
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: installed-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  installed:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: plugin
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: limecloud/hetu
+          ref: fe03d8eaa83fb47055125d8868ef4bdfc8832d0c
+          path: host
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '25.0.0'
+      - name: Install test dependencies without compiling host
+        run: |
+          (cd host && npm ci)
+          (cd plugin && npm ci)
+      - name: Install browser for offline artifacts
+        working-directory: plugin
+        run: npx playwright install chromium
+      - name: Build fixed plugin only
+        working-directory: plugin
+        run: |
+          npm run build
+          npm run check
+          npm run test:unit
+          npm run package
+      - name: Verify signed host and exact plugin package
+        working-directory: plugin
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/accept-installed.py
+      - name: Retain actual work surfaces and acceptance
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-installed-acceptance
+          path: |
+            plugin/output/installed-acceptance/*.json
+            plugin/output/installed-acceptance/*.html
+            plugin/output/installed-acceptance/*.epub
+            plugin/output/installed-acceptance/*.pdf
+            plugin/output/installed-acceptance/*.wav
+            plugin/output/installed-acceptance/*.png
+            plugin/output/installed-acceptance/*.log
+            plugin/test-results/
+          if-no-files-found: ignore
+          retention-days: 30

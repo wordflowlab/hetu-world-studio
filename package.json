@@ -1,0 +1,33 @@
+{
+  "name": "@wordflowlab/hetu-world-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=25 <26"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc --noEmit",
+    "test:unit": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:machine": "node --experimental-strip-types --test tests/machine.integration.ts",
+    "test:ui": "playwright test",
+    "verify": "npm run build && npm run check && npm run test:unit && npm run test:machine && npm run test:ui",
+    "package": "npm run build && node scripts/package.mjs",
+    "pretest:unit": "node scripts/generate-validators.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "esbuild": "0.28.2",
+    "typescript": "6.0.3"
+  }
+}

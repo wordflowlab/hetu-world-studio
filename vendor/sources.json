@@ -1,0 +1,43 @@
+{
+  "source_repository": "https://github.com/limecloud/hetu",
+  "base_commit": "fe03d8eaa83fb47055125d8868ef4bdfc8832d0c",
+  "scope": "固定公开SDK与共享样式，最低宿主0.12.3；项目存储仅调整本地SDK导入名称",
+  "files": [
+    {
+      "file": "hetu-sdk.ts",
+      "source": "packages/plugin-sdk/src/index.ts",
+      "sha256": "922bfb17f945ae4180de7e116d62ef20950f58602441c615eff859055ba158cb",
+      "adaptation": "原字节"
+    },
+    {
+      "file": "project-store.ts",
+      "source": "packages/plugin-sdk/src/project-store.ts",
+      "sha256": "d91ae5c338a8c0d324a88674a9fa732e0b9bfb4cd1eb79b143f6b5fb5f1c36e8",
+      "adaptation": "仅SDK相对导入名称调整"
+    },
+    {
+      "file": "radix-workbench.css",
+      "source": "assets/styles/radix-workbench.css",
+      "sha256": "ccf9f4d25676a4225180128d05a3d0a9d26e92fa832fdccb7d80c4d52ee4b625",
+      "adaptation": "原字节"
+    },
+    {
+      "file": "radix-colors-MIT.txt",
+      "source": "assets/licenses/radix-colors-MIT.txt",
+      "sha256": "9c400881b9139571aa7acc3bd6e422a4f05223b4519169fb661298fb44bf228e",
+      "adaptation": "原字节"
+    },
+    {
+      "file": "hetu-LICENSE",
+      "source": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "adaptation": "原字节"
+    },
+    {
+      "file": "plugin-manifest.schema.json",
+      "source": "contracts/schemas/plugin-manifest.schema.json",
+      "sha256": "014516778b9c3c61a5cf3bf0d75239967bd073f60c520fb5dac8d6b5da927b45",
+      "adaptation": "原字节"
+    }
+  ]
+}
