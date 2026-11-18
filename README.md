@@ -35,3 +35,5 @@ npm run package
 ## 文档
 
 [功能清单](CAPABILITIES.md) · [产品与开发文档](docs/README.md) · [验收记录](docs/08-实施计划与验收记录.md)。
+
+从[GitHub v0.1.0开发预览](https://github.com/wordflowlab/hetu-world-studio/releases/tag/v0.1.0)获取固定运行包；[发行验收](docs/research/release-acceptance.json)说明正式宿主、平台及证据边界。

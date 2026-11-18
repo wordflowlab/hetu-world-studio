@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-11-18T15:33:35.610Z",
+  "plugin_id": "org.wordflowlab.world-studio",
+  "package_sha256": "5050928ecd28c72b5be6eb227a39e09919ee8c12354967cc482f0b2011d364d5",
+  "host_version": "hetu 0.12.4",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "actions": [
+    "skills.read",
+    "save_project",
+    "convert_date",
+    "compare_dates",
+    "check_rules",
+    "simulate_resources",
+    "preview_impact",
+    "put_calendar",
+    "put_marker",
+    "put_rule",
+    "put_resource",
+    "put_scenario",
+    "list_projects",
+    "get_source",
+    "get_operation",
+    "get_basis",
+    "build_context",
+    "create_handoff",
+    "compare_versions",
+    "export_project",
+    "remove_scenario",
+    "remove_resource",
+    "remove_rule",
+    "remove_marker",
+    "remove_calendar",
+    "get_project"
+  ],
+  "skill_resources": 3,
+  "lifecycle": [
+    "install",
+    "disable",
+    "enable",
+    "uninstall",
+    "install"
+  ],
+  "fixed_history": true,
+  "CAS": true,
+  "original_key_recovery": true,
+  "artifact_sha256_verified": true,
+  "limits": [
+    "没有付费模型、作者采纳、定稿或Windows/Linux专业运行验收"
+  ]
+}

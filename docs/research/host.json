@@ -1,0 +1,9 @@
+{
+  "version": "0.12.4",
+  "git_sha": "3617eb7cabeda135f46d475eff28488d470f3bbe",
+  "archive_sha256": "39c55fea493132c172dfe4d4da34a082831540afedc4eda0de6636dd7e1b0f0c",
+  "source_build": false,
+  "signature_verified": true,
+  "gatekeeper": "/Applications/Hetu.app: accepted\nsource=Notarized Developer ID",
+  "staple": "Processing: /Applications/Hetu.app\nThe validate action worked!"
+}

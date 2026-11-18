@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "plugin_id": "org.wordflowlab.world-studio",
+  "package_sha256": "5050928ecd28c72b5be6eb227a39e09919ee8c12354967cc482f0b2011d364d5",
+  "host": {
+    "version": "0.12.4",
+    "git_sha": "3617eb7cabeda135f46d475eff28488d470f3bbe",
+    "archive_sha256": "39c55fea493132c172dfe4d4da34a082831540afedc4eda0de6636dd7e1b0f0c",
+    "size_bytes": 226026073,
+    "release_url": "https://github.com/limecloud/hetu/releases/tag/v0.12.4"
+  },
+  "ci": {
+    "conclusion": "success",
+    "headSha": "c9ff375148a17764d063f4610bee28cd2d21abc3",
+    "status": "completed",
+    "url": "https://github.com/wordflowlab/hetu-world-studio/actions/runs/44336534419"
+  },
+  "tested_source_commit": "c9ff375148a17764d063f4610bee28cd2d21abc3",
+  "tests": [
+    {
+      "test": "machine",
+      "exit_code": 0
+    },
+    {
+      "test": "ui",
+      "exit_code": 0
+    },
+    {
+      "test": "cross",
+      "exit_code": 0
+    }
+  ],
+  "local_official_installed": {
+    "host": {
+      "version": "0.12.4",
+      "git_sha": "3617eb7cabeda135f46d475eff28488d470f3bbe",
+      "archive_sha256": "39c55fea493132c172dfe4d4da34a082831540afedc4eda0de6636dd7e1b0f0c",
+      "source_build": false,
+      "signature_verified": true,
+      "gatekeeper": "/Applications/Hetu.app: accepted\nsource=Notarized Developer ID",
+      "staple": "Processing: /Applications/Hetu.app\nThe validate action worked!"
+    },
+    "tests": [
+      {
+        "test": "machine",
+        "exit_code": 0
+      },
+      {
+        "test": "ui",
+        "exit_code": 0
+      },
+      {
+        "test": "cross",
+        "exit_code": 0
+      }
+    ],
+    "package_sha256": "5050928ecd28c72b5be6eb227a39e09919ee8c12354967cc482f0b2011d364d5"
+  },
+  "unit_tests": 20,
+  "professional_actions": 25,
+  "docs": {
+    "files_checked": 60,
+    "local_links": 112,
+    "diagrams_rendered": 24
+  },
+  "platforms": [
+    "macOS arm64"
+  ],
+  "limits": [
+    "隔离原创、图像与本机系统语音样本，不是文学、美术、诡计公平或表演质量认可",
+    "当前Codex原连接仍为0.11.11，正式0.12.4通过固定安装版连接另行验收",
+    "未执行付费模型、内容外发、正文采纳或定稿",
+    "Windows/Linux专业旅程未验证"
+  ],
+  "recorded_at": "2026-11-18T15:56:36.663241+00:00"
+}

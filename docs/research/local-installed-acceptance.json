@@ -1,0 +1,26 @@
+{
+  "host": {
+    "version": "0.12.4",
+    "git_sha": "3617eb7cabeda135f46d475eff28488d470f3bbe",
+    "archive_sha256": "39c55fea493132c172dfe4d4da34a082831540afedc4eda0de6636dd7e1b0f0c",
+    "source_build": false,
+    "signature_verified": true,
+    "gatekeeper": "/Applications/Hetu.app: accepted\nsource=Notarized Developer ID",
+    "staple": "Processing: /Applications/Hetu.app\nThe validate action worked!"
+  },
+  "tests": [
+    {
+      "test": "machine",
+      "exit_code": 0
+    },
+    {
+      "test": "ui",
+      "exit_code": 0
+    },
+    {
+      "test": "cross",
+      "exit_code": 0
+    }
+  ],
+  "package_sha256": "5050928ecd28c72b5be6eb227a39e09919ee8c12354967cc482f0b2011d364d5"
+}

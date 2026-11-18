@@ -1,0 +1,94 @@
+{
+  "recorded_at": "2026-11-18T15:36:08.695Z",
+  "host_version": "hetu 0.12.4",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "stages": [
+    "固定正文与设定，明确历法和封港假设，资源不足如实报告",
+    "区分作者真相与读者可见线索，按揭示阶段核对假说",
+    "形成宿主参考稿，规则更新先看影响，旧跨插件依据保持",
+    "实际参考图、色板与服装方案关联固定人物，区域意见绑定图像摘要",
+    "实际对白媒体与双语字幕同源，偏移后旧意见保留并提示过期，三种格式完整交付",
+    "独立下一章候选接续，原著正文与旧专业修订保持，无采纳定稿",
+    "四包分别在独立剧本保存工程，单端读取另一作品被拒绝",
+    "独立视频分别保存实际参考板和实际媒体双语字幕，单端跨作品读取拒绝"
+  ],
+  "snapshots": [
+    {
+      "slug": "world-studio",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.world-studio",
+        "object_id": "ext_cc14331c-07a6-4547-8f36-6b0f6bd2df87",
+        "revision": 2,
+        "sha256": "592a7b60d25800e86de25cfc068f3fb43f9d6cbffd22b96d182bd6b2dfa0530e"
+      },
+      "package_sha256": "5050928ecd28c72b5be6eb227a39e09919ee8c12354967cc482f0b2011d364d5"
+    },
+    {
+      "slug": "mystery-lab",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.mystery-lab",
+        "object_id": "ext_7de80d09-dc78-4104-9e7b-c71526aba6e5",
+        "revision": 1,
+        "sha256": "0f56b9eba5aad53494095f787ebf8d4078a3091b833630e656b5a2dc0a31a1ba"
+      },
+      "package_sha256": "2c93b9094f2660a96e5193224530bfbc078594f071b8c4b5057fd7df7147f606"
+    },
+    {
+      "slug": "art-direction",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.art-direction",
+        "object_id": "ext_34f61328-d5d0-4a90-80dc-8d9f870c10b5",
+        "revision": 1,
+        "sha256": "b10ff8c0801e99b841c31a71732cfc1e9c1e884c3b4b923c654774d9ca103d8c"
+      },
+      "package_sha256": "54f05a084e642455f90defc9a2fc8da9c71b9d4204e8f51b176843d5f3673682"
+    },
+    {
+      "slug": "subtitle-studio",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.subtitle-studio",
+        "object_id": "ext_8859fb5e-a630-4906-8dd7-10943e784633",
+        "revision": 3,
+        "sha256": "7ec98bc6cdd5f8f741ff57989ed43fb3aded9e380d609f28368fa3386bfa9037"
+      },
+      "package_sha256": "5c9baeffe35b436d7504752db9fa5c2613fa65418fcbea921c4bfef9dd5a84d8"
+    }
+  ],
+  "independent_target": {
+    "workspace_id": "workspace_933fa74c-68ce-4289-aba8-877831cb7de0",
+    "kind": "drama",
+    "object_id": "drama_4627269a-6f95-4693-aa6f-fd714028a113"
+  },
+  "independent_video": {
+    "kind": "video",
+    "object_id": "video_5c3760e4-9526-4f49-b5c8-17a597dc4de4",
+    "workspace_id": "workspace_e117451d-7d69-4fe5-b038-151feb05626f"
+  },
+  "video_snapshots": [
+    {
+      "slug": "art-direction",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.art-direction",
+        "object_id": "ext_5b20fcaa-b0ba-4e74-a56c-e49d982770ff",
+        "revision": 1,
+        "sha256": "5a301549902eed77e53b17e5c4214c6ae605a5d3533c239cd3648578e529ae26"
+      }
+    },
+    {
+      "slug": "subtitle-studio",
+      "ref": {
+        "owner_plugin_id": "org.wordflowlab.subtitle-studio",
+        "object_id": "ext_14f1b061-eab5-4875-af60-988bf0328511",
+        "revision": 1,
+        "sha256": "04d4f5a9547fe76154fd5f9818d94bb26418b1ebfded5460a3f520e7a749c62a"
+      }
+    }
+  ],
+  "adopted": false,
+  "finalized": false,
+  "limits": [
+    "隔离原创与系统语音样本，不是文学、美术、表演或真实读者质量认可",
+    "未调用付费模型、外部发送、采纳或定稿"
+  ]
+}
