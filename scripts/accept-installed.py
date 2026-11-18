@@ -38,6 +38,9 @@ identity=run(['codesign','--display','--verbose=4',str(app)]);assert 'TeamIdenti
 gate=run(['spctl','--assess','--type','execute','--verbose=2',str(app)])
 staple=run(['xcrun','stapler','validate',str(app)]);bin_dir=app/'Contents/Resources/bin'
 assert run([str(bin_dir/'hetu'),'--version'])=='hetu '+version
+for name,expected in m['signed_binary_sha256'].items():assert sha(bin_dir/name)==expected,'随包二进制与正式归档不一致：'+name
+for name,record in m['artifacts'].items():
+ if name.startswith('Hetu.app/Contents/Resources/app/') and 'sha256' in record:assert sha(app.parent/name)==record['sha256'],'随包工作台与正式归档不一致：'+name
 (EVIDENCE/'host.json').write_text(json.dumps({'version':version,'git_sha':host['git_sha'],'archive_sha256':host['archive_sha256'],'source_build':False,'signature_verified':True,'gatekeeper':gate,'staple':staple},ensure_ascii=False,indent=2)+'\n')
 plugin=lock['plugin'];slug=plugin['slug'];name=f"org.wordflowlab.{slug}-{plugin['version']}.tgz"
 if os.environ.get('HETU_PUBLISHED_BUNDLE')=='1':
