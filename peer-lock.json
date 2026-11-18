@@ -1,0 +1,23 @@
+{
+  "purpose": "同批联合验收的固定源码和运行包；不属于运行时依赖",
+  "peers": [
+    {
+      "slug": "mystery-lab",
+      "repository": "wordflowlab/hetu-mystery-lab",
+      "source_commit": "3e30b274edbbacbd15643eb381ccef7e9265aec2",
+      "package_sha256": "2c93b9094f2660a96e5193224530bfbc078594f071b8c4b5057fd7df7147f606"
+    },
+    {
+      "slug": "art-direction",
+      "repository": "wordflowlab/hetu-art-direction",
+      "source_commit": "23cff890e06cc54a480898bbf5697a91ac131272",
+      "package_sha256": "54f05a084e642455f90defc9a2fc8da9c71b9d4204e8f51b176843d5f3673682"
+    },
+    {
+      "slug": "subtitle-studio",
+      "repository": "wordflowlab/hetu-subtitle-studio",
+      "source_commit": "9e2796abbb91dab659e2cc49e8d6df090635667b",
+      "package_sha256": "5c9baeffe35b436d7504752db9fa5c2613fa65418fcbea921c4bfef9dd5a84d8"
+    }
+  ]
+}

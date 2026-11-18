@@ -1,6 +1,6 @@
 import {readArtifact} from "./artifact.ts";
 import {ProfessionalView} from "./professional.tsx";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import manifest from "../../contracts/plugin-manifest.json" with { type: "json" };
 import { config } from "../domain/config.ts";
@@ -93,8 +93,12 @@ function App() {
       revision: record.object.revision,
       sha256: record.sha256,
     });
+  // 专业视图的背景读取与作者操作共用同一后端，保持请求顺序。
+  const invocationQueue = useRef<Promise<unknown>>(Promise.resolve());
   async function invoke(action: string, input: any = {}) {
-    const r: any = await api.invoke(action, input);
+    const request = invocationQueue.current.then(() => api.invoke(action, input));
+    invocationQueue.current = request.then(() => undefined, () => undefined);
+    const r: any = await request;
     if (r.status !== "succeeded")
       throw Object.assign(
         Error(r.error?.message ?? "结果未知，请沿原操作回读。"),

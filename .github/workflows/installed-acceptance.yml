@@ -21,6 +21,24 @@ jobs:
           ref: fe03d8eaa83fb47055125d8868ef4bdfc8832d0c
           path: host
           persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: wordflowlab/hetu-mystery-lab
+          ref: 3e30b274edbbacbd15643eb381ccef7e9265aec2
+          path: hetu-mystery-lab
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: wordflowlab/hetu-art-direction
+          ref: 23cff890e06cc54a480898bbf5697a91ac131272
+          path: hetu-art-direction
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: wordflowlab/hetu-subtitle-studio
+          ref: 9e2796abbb91dab659e2cc49e8d6df090635667b
+          path: hetu-subtitle-studio
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '25.0.0'
@@ -28,6 +46,9 @@ jobs:
         run: |
           (cd host && npm ci)
           (cd plugin && npm ci)
+          (cd hetu-mystery-lab && npm ci && npm run build)
+          (cd hetu-art-direction && npm ci && npm run build)
+          (cd hetu-subtitle-studio && npm ci && npm run build)
       - name: Install browser for offline artifacts
         working-directory: plugin
         run: npx playwright install chromium
@@ -54,6 +75,9 @@ jobs:
             plugin/output/installed-acceptance/*.epub
             plugin/output/installed-acceptance/*.pdf
             plugin/output/installed-acceptance/*.wav
+            plugin/output/installed-acceptance/*.srt
+            plugin/output/installed-acceptance/*.vtt
+            plugin/output/installed-acceptance/*.ass
             plugin/output/installed-acceptance/*.png
             plugin/output/installed-acceptance/*.log
             plugin/test-results/
