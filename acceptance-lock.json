@@ -1,8 +1,8 @@
 {
   "host": {
-    "version": "0.12.3",
-    "git_sha": "fe03d8eaa83fb47055125d8868ef4bdfc8832d0c",
-    "archive_sha256": "c3e0f1dab7672bceba74151793357dbc3cae2d6562dedb093f57e042bbb51725"
+    "version": "0.12.4",
+    "git_sha": "3617eb7cabeda135f46d475eff28488d470f3bbe",
+    "archive_sha256": "39c55fea493132c172dfe4d4da34a082831540afedc4eda0de6636dd7e1b0f0c"
   },
   "plugin": {
     "slug": "world-studio",
